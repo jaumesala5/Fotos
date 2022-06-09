@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_camera,btn_gira, btn_filtre;
     ImageView imgView;
     int gir=0;
-    String colors="SF";
+    String colors="Sensa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
     }
     private void filtre(){
 
-        if(colors.equals("SF")){
+        if(colors.equals("Sensa")){
             imgView.setColorFilter((-50000000), PorterDuff.Mode.LIGHTEN);
-            colors = "LOWGRY";
-        } else if(colors.equals("LOWGRY")) {
+            colors = "Amb";
+        } else if(colors.equals("Amb")) {
             imgView.setColorFilter((+50000000), PorterDuff.Mode.LIGHTEN);
-            colors = "SF";
+            colors = "Sensa";
         }
 
 
